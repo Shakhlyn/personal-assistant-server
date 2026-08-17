@@ -26,20 +26,12 @@ create_files() {
     local files=(
         app/__init__.py
         app/api/__init__.py
-        app/core/__init__.py
-        app/core/config.py
-        app/core/exceptions.py
-        app/core/logging.py
-        app/core/middleware.py
-        app/core/request_id.py
-        app/core/security.py
+        app/core/{__init__.py,config.py,exceptions.py,logging.py,middleware.py,request_id.py,security.py}
         app/schemas/__init__.py
         app/models/__init__.py
         app/services/__init__.py
         app/repositories/__init__.py
-        app/db/__init__.py
-        app/db/base.py
-        app/db/session.py
+        app/db/{__init__.py,base.py,session.py}
         app/utils/__init__.py
         tests/__init__.py
     )
