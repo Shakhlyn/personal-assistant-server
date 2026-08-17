@@ -1,6 +1,10 @@
-def main():
-    print("Hello from pa-server!")
+import pydantic
+from pydantic_settings import BaseSettings
 
 
-if __name__ == "__main__":
-    main()
+from fastapi import FastAPI
+
+app = FastAPI()
+@app.get("/", name="home")
+async def root():
+    return {"message": "Hello World"}
